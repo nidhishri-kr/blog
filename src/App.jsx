@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/blog">
       <div className="app-container">
         <h1>📰 Blog Viewer</h1>
         <Routes>

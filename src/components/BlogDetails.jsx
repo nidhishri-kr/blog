@@ -14,15 +14,15 @@ const BlogDetails = () => {
   }, [id]);
 
   return post ? (
-    <div>
+    <div className="blog-details-page">
       <Link to="/" className="back-link">
         ← Back to posts
       </Link>
-      <h2>{post.title}</h2>
-      <p>{post.body}</p>
+      <h2 className="details-title">{post.title}</h2>
+      <p className="details-body">{post.body}</p>
     </div>
   ) : (
-    <p>Loading...</p>
+    <p style={{ textAlign: "center", padding: "50px" }}>Loading...</p>
   );
 };
 
